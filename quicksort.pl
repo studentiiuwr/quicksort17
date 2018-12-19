@@ -8,6 +8,7 @@ project_dedalus_quicksort([X|Xs],Ys) :-
   project_dedalus_quicksort(Right,Rs),
   append(Ls,[X|Rs],Ys).
 
+% tu chyba miałem coś dodać
 project_dedalus_quicksort_helper_partition([X|Xs],Y,[X|Ls],Rs) :- 
   X =< Y, 
   project_dedalus_quicksort_helper_partition(Xs,Y,Ls,Rs).
